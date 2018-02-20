@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  music_hive_development_db:
+    image: postgres:9.5-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: music_hive_development
+    ports:
+      - 5432:5432
+
+  music_hive_test_db:
+    image: postgres:9.5-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: music_hive_test
+    ports:
+      - 5433:5432
+
