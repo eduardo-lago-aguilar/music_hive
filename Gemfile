@@ -49,3 +49,4 @@ group :test do
   gem 'faker', '~> 1.8.7'
   gem 'database_cleaner', '~> 1.6.2'
 end
+gem 'webpacker', '~> 3.2'
