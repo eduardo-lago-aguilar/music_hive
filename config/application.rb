@@ -39,5 +39,7 @@ module MusicHive
       g.helper          false
     end
 
+    config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
+
   end
 end
